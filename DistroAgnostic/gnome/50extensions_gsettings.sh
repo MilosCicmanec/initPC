@@ -136,7 +136,7 @@ if gsettings get org.gnome.shell.extensions.tiling-assistant focus-hint; then
         focus-hint "3"
         focus-hint-color "rgb(192,97,203)"
         focus-hint-outline-border-radius "6"
-        focus-hint-outline-size "6"
+        focus-hint-outline-size "4"
         focus-hint-outline-style "1"
 BASH
 elif gsettings get org.gnome.shell.extensions.tiling-assistant active-window-hint; then
@@ -170,10 +170,10 @@ for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
     move-adaptive-tiling-mod "2"
     move-favorite-layout-mod "0"
     restore-window "['<Super>Down']"
-    screen-top-gap "10"
-    screen-left-gap "10"
-    screen-right-gap "10"
-    screen-bottom-gap "10"
+    screen-top-gap "6"
+    screen-left-gap "6"
+    screen-right-gap "6"
+    screen-bottom-gap "6"
     tile-bottom-half "['<Alt><Shift>x']"
     tile-bottomleft-quarter "['<Alt>a']"
     tile-bottomright-quarter "['<Alt>s']"
@@ -187,7 +187,7 @@ for_each "gsettings set org.gnome.shell.extensions.tiling-assistant " << 'BASH'
     tile-topleft-quarter "['<Alt>q']"
     tile-topright-quarter "['<Alt>w']"
     tiling-popup-all-workspace "false"
-    window-gap "8"
+    window-gap "4"
 BASH
 
 # TODO configure Tiling shell in detail & in congruence with other keybindings
@@ -204,12 +204,12 @@ for_each "gsettings set org.gnome.shell.extensions.tilingshell " << 'BASH'
     focus-window-left "['<Control><Alt>h']"
     focus-window-right "['<Control><Alt>l']"
     focus-window-up "['<Control><Alt>k']"
-    inner-gaps "8"
+    inner-gaps "4"
     move-window-down "['<Shift><Control><Alt><Super>Down']"
     move-window-left "['<Shift><Control><Alt><Super>Left']"
     move-window-right "['<Shift><Control><Alt><Super>Right']"
     move-window-up "['<Shift><Control><Alt><Super>Up']"
-    outer-gaps "10"
+    outer-gaps "6"
     # TODO - this setting probably also sets and unsets stuff in org.gnome.mutter -
     # test whether setting these two values in tiling shell is consistent and behaves
     # the same as setting them in the Extension settings app (if not correct that)
