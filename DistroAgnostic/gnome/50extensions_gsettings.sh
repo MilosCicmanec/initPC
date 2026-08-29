@@ -243,5 +243,6 @@ for_each "gsettings set org.gnome.shell.extensions.workspaces-indicator-by-open-
     indicator-show-background "true"
     indicator-use-custom-names "true"
     scroll-enable "false"
-    windows-sort-method 'COORDINATES'
+    windows-sort-method "COORDINATES"
+    icons-group "GROUP AND SHOW COUNT"
 BASH
