@@ -40,7 +40,7 @@ for_each "gsettings set org.gnome.desktop.wm.preferences " << 'BASH'
     button-layout "appmenu:minimize,close"
     focus-mode "sloppy"
     mouse-button-modifier "<Super>"
-    num-workspaces "18"
+    num-workspaces "11"
     # NOTE: right click resizing is dependent on the sector of the window being
     # clicked on, see: https://raw.githubusercontent.com/RamonUnch/AltSnap/main/HelpImages/TestWindow.png
     resize-with-right-button "true"
@@ -114,7 +114,7 @@ fi
 # If on my work ThinkPad P1 Gen8
 if lscpu | grep -F "Intel(R) Core(TM) Ultra 7 265H"; then
     for_each "gsettings set org.gnome.desktop.interface " << 'BASH'
-        cursor-size "64"
+        cursor-size "45"
         document-font-name "Sans 13"
         font-hinting "slight"
         font-name "Ubuntu Sans 14"
